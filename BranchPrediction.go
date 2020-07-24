@@ -20,8 +20,9 @@ func main() {
 	start := time.Now().UnixNano()
 	for j := 0; j < 10000; j++ {
 		for i := 0; i < length; i++ {
-			if nums[i] > indexNum {
-				count++
+			n := nums[i]
+			if n > indexNum {
+				count += n
 			}
 		}
 	}
@@ -34,8 +35,9 @@ func main() {
 	start = time.Now().UnixNano()
 	for j := 0; j < 10000; j++ {
 		for i := 0; i < length; i++ {
-			if nums[i] > indexNum {
-				count++
+			n := nums[i]
+			if n > indexNum {
+				count += n
 			}
 		}
 	}
